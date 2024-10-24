@@ -30,10 +30,10 @@ jobs:
           pip install robotframework-seleniumlibrary
           pip install robotframework-faker
 
-      - name: Executando os testes de API do Robot
+      - name: Executando os testes Web do Robot
         # run: echo Executando os testes de API do Robot
         run: |
-          robot --outputdir tests/
+          robot --outputdir results/ tests/
  
       - name: Salvando o Report dos Testes
         # run: echo Salvando o Report dos Testes
