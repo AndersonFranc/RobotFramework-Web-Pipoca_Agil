@@ -28,7 +28,7 @@ jobs:
         # run: echo Instalação das depedências do Projeto
         run: |
           pip install robotframework-seleniumlibrary
-   
+          pit install Fakerlibrary
 
       - name: Executando os testes de API do Robot
         # run: echo Executando os testes de API do Robot
