@@ -11,7 +11,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: https://AndersonFranc.github.io/chips-academy-front-robot/report.html
+      url: https://AndersonFranc.github.io/RobotFramework-Web-Pipoca_Agil/report.html
  
     steps:
       - name: clonando para o repositorio na maquina virtual
@@ -28,12 +28,12 @@ jobs:
         # run: echo Instalação das depedências do Projeto
         run: |
           pip install robotframework-seleniumlibrary
-          pit install Fakerlibrary
+          pip install FakerLibrary
 
       - name: Executando os testes de API do Robot
         # run: echo Executando os testes de API do Robot
         run: |
-          robot --outputdir results/ tests/
+          robot --outputdir tests/
  
       - name: Salvando o Report dos Testes
         # run: echo Salvando o Report dos Testes
