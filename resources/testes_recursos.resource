@@ -8,8 +8,7 @@ ${URL}                https://staging-farmapp.vercel.app/
 ${castraseElemento}   //a[contains(.,'Cadastre-se')]
 ${Castra-se}           //h3[@class='tracking-tight text-center font-bold text-[32px] text-neutral leading-10 mb-0.5'][contains(.,'Cadastre-se')]
 ${CampoNomeCompleto}   //input[@name='fullname']
-${CampoEmail}          //input[@name='email']
-${NOME_FAKE}           ${NOME_FAKE}         
+${CampoEmail}          //input[@name='email']    
 ${EMAIL}                @teste.com.br 
 ${Botao_Cargo}          //button[contains(@type,'button')]
 ${SelectFarmaceutico}   //span[contains(.,'Farmacêutico')] 
@@ -45,7 +44,6 @@ Passo 3 - Clicar nome completo
 Passo 4 - Digitar nome completo
     Wait Until Element Is Visible    locator=${CampoNomeCompleto}
     ${NOME_FAKE}  FakerLibrary.Name
-    Set Global Variable   ${NOME_FAKE}    ${NOME_FAKE}
     Log  ${NOME_FAKE} 
     Input Text        locator=${CampoNomeCompleto}    text=${NOME_FAKE} 
     
