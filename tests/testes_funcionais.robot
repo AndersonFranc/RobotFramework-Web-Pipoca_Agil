@@ -1,7 +1,7 @@
 *** Settings ***
 Resource         ../resources/testes_recursos.resource
 Test Setup       Abrir o navegador
-Test Teardown    
+Test Teardown    Fechar o navegador
 
 
 *** Test Cases ***

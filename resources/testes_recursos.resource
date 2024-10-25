@@ -21,7 +21,7 @@ ${Botao_Cadastrar}      //button[@type='submit']
 *** Keywords ***
 
 Abrir o navegador
-    Open Browser    browser=chrome 
+    Open Browser    browser=headlesschrome
     Maximize Browser Window
 
 Fechar o navegador
